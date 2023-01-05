@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 255, 209);
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("lov.jpg");
+    /* background: url("love.jpg"); */
+    /* height: 10 */
+}
+/* .love-image{
+    
+    height: 100%;
+    width: 100%;
+} */
+
+.heading{
+    font-weight: bolder;
+    font-size: 4rem;
+    color: rgb(163, 26, 203);
+    padding-top: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 60vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(236, 142, 231);
+    width: 40vw;
+    height: 90%;
+    border: 2px solid rgb(233, 40, 188);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+/* Media queries */
+@media screen and (max-width: 390px) {
+    .heading, .container, .form-container {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+.form-container{
+    text-align: center;
+    margin: auto;
+}
+
+/* label{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    padding: 60px auto;
+} */
+
+input{
+    border: 2px;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(57, 181, 224);
+    font-weight: bolder;
+    background-color: rgb(36, 55, 99);
+    font-size: 35px;
+}
+input::placeholder{
+    color: rgb(233, 223, 221);
+    font-size: 35px;
+}
+
+
+.submit-btn{
+    text-decoration: none;
+    background-color: rgb(245, 242, 248);
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #030b00;
+    /* background-color: rgb(245, 110, 179); */
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    padding: 10px;
+    margin: 10px auto;
+    color: white;
+    background-color: rgb(163, 26, 203);
+    border: 2px solid rgb(163, 26, 203);
+    border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#print{
+    text-align: center;
+    /* height: 50px;
+    width: 500px; */
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 20px auto;
+    margin-top: 34px;
+    font-size: 30px;
+    background-color: rgb(12, 14, 13);
+}
+
+#statement{
+    font-size: 20px;
+    text-align: center;
+    /* padding: 3px; */
+    margin: 3px;
+    font-weight: bold;
+    background-color: rgba(163, 35, 175, 0.891);
+    color: rgb(225, 223, 234);
+    border-radius: 12px;
+}
+
+.footer{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 30, 30);
+}
