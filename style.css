@@ -27,6 +27,11 @@ body{
     color: rgb(163, 26, 203);
     padding-top: 10px;
 }
+@media screen and (max-width: 390px){
+    .heading{
+        font-size: 2rem;
+    }
+  } 
 .container{
     display: flex;
     flex-direction: row;
