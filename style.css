@@ -11,13 +11,10 @@
 }
 
 body{
-    background-color: rgb(0, 255, 209);
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
     background-image: url("lov.jpg");
-    /* background: url("love.jpg"); */
-    /* height: 10 */
 }
 
 
