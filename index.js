@@ -1,8 +1,12 @@
 document.getElementById("btn").addEventListener("click", love);
 
+
 function love(){
     var name1 = document.getElementById("fname").value;
     var name2 = document.getElementById("lname").value;
+    let statement = document.getElementById("statement");
+
+    statement.classList.remove("hidden")
 
     if(name1<= 2 || name2 <= 2)
     {
