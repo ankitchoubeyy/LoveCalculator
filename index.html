@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
 
-<body>
+  <body>
     <div class="love-image">
-        <h1 class="heading">Love 💕 Calculator</h1>
+      <h1
+        class="text-4xl text-center text-pink-600 font-extrabold font-sans my-6"
+      >
+        Love 💕 Calculator
+      </h1>
 
-        <div class="container">
-            <form action="#" class="form-container">
-                <!-- <label for="fname">You:</label> -->
-                <input type="text" id="fname" name="fname" placeholder="Your Name" required
-                    onfocus="this.value = ''"><br>
-                <!-- <label for="lname">Your Love:</label> -->
-                <input type="text" id="lname" name="lname" placeholder="Your Love Name" required
-                    onfocus="this.value = ''"><br><br>
-                <a href="#" class="submit-btn" id="btn">Calculate</a>
-                <p id="print">Your relationship Status here : </p>
-                <p id="statement"></p>
-            </form>
-        </div>
+      <div class="w-[100%]">
+        <form
+          action="#"
+          class="w-[80%] sm:w-[50%] m-auto"
+          autocapitalize="on"
+          autocomplete="off"
+        >
+          <fieldset class="border-2 border-pink-600 p-5">
+            <legend class="sm:text-2xl px-4 text-pink-600">
+              Find you love percentage
+            </legend>
+            <!-- <label for="fname">You:</label> -->
+            <input
+              class="outline-none text-white uppercase px-5 py-3 text-xl rounded-md bg-[#243763] w-[100%] sm:w-[80%] border-none text-center sm:my-3 my-5"
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Your Name"
+              required
+              onfocus="this.value = ''"
+            /><br />
+            <!-- <label for="lname">Your Love:</label> -->
+            <input
+              class="outline-none text-white uppercase px-5 py-3 text-xl rounded-md bg-[#243763] w-[100%] sm:w-[80%] border-none text-center sm:my-3 my-5"
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Your Love Name"
+              required
+              onfocus="this.value = ''"
+            /><br /><br />
+            <button
+              href="#"
+              class="bg-pink-500 hover:bg-pink-700 leading-6 text-white text-2xl font-bold py-4 px-10 rounded-lg"
+              id="btn"
+            >
+              Calculate
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="flex justify-center flex-col items-center w-[100%]">
+        <p id="print" class="py-2 px-4 bg-[#ffabb8] sm:py-4 sm:px-8 text-[#db2777] font-medium my-5">
+            Your relationship Status :
+          </p>
+          <p
+            id="statement"
+            class="py-2 px-4 w-[80%] sm:w-[50%] text-2xl text-[#ec4899] bg-[#ffe3eb]"
+          ></p>
+      </div>
 
-
-        <div class="footer">
-            <p class="footer-text">❤️ Made by <b>Ankit Choubey</b>❤️</p>
-
-        </div>
+      <div class="footer">
+        <p class="text-2xl text-[#f44336] uppercase indent-1 sm:text-3xl my-8">
+          ❤️ Made by <b>Ankit Choubey </b>❤️
+        </p>
+      </div>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
