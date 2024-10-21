@@ -758,6 +758,22 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[25px\]{
+  font-size: 25px;
+}
+
+.text-\[2px\]{
+  font-size: 2px;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
 .font-bold{
   font-weight: 700;
 }
